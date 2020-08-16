@@ -26,4 +26,4 @@ else
 fi
 
 echo "Running: sh arm-ttk/Test-AzTemplate.sh $_args"
-#sh arm-ttk/Test-AzTemplate.sh $_args
+sh arm-ttk/Test-AzTemplate.sh $_args
