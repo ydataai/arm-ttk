@@ -26,5 +26,3 @@ else
 fi
 
 sh arm-ttk/Test-AzTemplate.sh $_args
-
-
