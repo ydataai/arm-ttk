@@ -30,4 +30,8 @@ results=$(sh arm-ttk/Test-AzTemplate.sh $_args)
 
 echo "Results: $results"
 
+results="${results//'%'/'%25'}"
+results="${results//$'\n'/'%0A'}"
+results="${results//$'\r'/'%0D'}"
+
 echo "::set-output results=$results"

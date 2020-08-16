@@ -24,9 +24,6 @@ jobs:
     - name: Results for Run ARM-TTK with 'path'
       run: |
         content=${{ steps.path-test.outputs.results }}
-        content="${content//'%'/'%25'}"
-        content="${content//$'\n'/'%0A'}"
-        content="${content//$'\r'/'%0D'}"
         echo "Results $content"
 
     - name: Run ARM-TTK with 'file'
