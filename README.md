@@ -2,7 +2,7 @@
 
 # About
 
-This actions enables running arm-ttk as a part of a GitHub Actions workflow. 
+This action enables running arm-ttk as a part of a GitHub Actions workflow. 
 
 ## What is arm-ttk?
 
@@ -35,6 +35,9 @@ It tests ARM Templates for number of pre-defined scenarios. You can read more be
       uses: venura9/arm-ttk@master
       with: 
         path: azure-quickstart-templates/101-storage-account-create/
+
+    - name: Results for Run ARM-TTK with 'path'
+      run: echo "Results ${{ steps.path-test.outputs.results }}"
 
     - name: Run ARM-TTK with 'file'
       uses: venura9/arm-ttk@master
