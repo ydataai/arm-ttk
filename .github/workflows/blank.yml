@@ -27,7 +27,7 @@ jobs:
       run: git clone https://github.com/Azure/azure-quickstart-templates.git
 
     - name: ARM-TTK
-      uses: venura9/arm-ttk@1.0-Preview
+      uses: venura9/arm-ttk@master
       with: 
         args: azure-quickstart-templates/101-storage-account-create/
 
