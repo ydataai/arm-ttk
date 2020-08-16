@@ -1,3 +1,15 @@
+# About the Action
+
+This actions enables running arm-ttk as a part of a GitHub Actions workflow. 
+
+## What is arm-ttk?
+
+
+
+
+
+
+--- Original README.md content from the folked repository ---
 
 # Azure Resource Manager Template Toolkit (arm-ttk)
 
