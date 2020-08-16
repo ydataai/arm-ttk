@@ -1,6 +1,6 @@
 # action.yml
-name: 'Manage NSG'
-description: 'Add/Remove NSG Rules using the public IP of the hosted runner'
+name: 'ARM-TTK'
+description: 'runs arm-ttk as a part of a workflow'
 inputs:
   args:
     required: true
