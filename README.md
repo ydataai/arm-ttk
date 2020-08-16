@@ -1,12 +1,31 @@
-# About the Action
+# About
 
 This actions enables running arm-ttk as a part of a GitHub Actions workflow. 
 
 ## What is arm-ttk?
 
+It tests ARM Templates for number of pre-defined scenarios. You can read more below;
+
+- [Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit)
+- [Source](https://aka.ms/arm-ttk)
+
+## Inputs
+  ### `todo1`
+   - **Required** todo1 
+   - Default `"N/A"`.
+  ### `todo2`
+   - **Required** todo2 
+   - Default `"N/A"`.
+  ### `todo3`
+   - **Required** todo3 
+   - Default `"N/A"`.
 
 
+## Example usage
 
+```yaml
+
+```
 
 
 --- Original README.md content from the folked repository ---
