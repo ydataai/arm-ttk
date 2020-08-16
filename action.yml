@@ -1,0 +1,16 @@
+# action.yml
+name: 'Manage NSG'
+description: 'Add/Remove NSG Rules using the public IP of the hosted runner'
+inputs:
+  args:
+    required: true
+    description: 'arm-ttk args'
+outputs:
+
+branding:
+  icon: 'command'  
+  color: 'blue'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
