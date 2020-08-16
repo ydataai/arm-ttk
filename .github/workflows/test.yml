@@ -15,10 +15,7 @@ jobs:
 
     - run: git clone https://github.com/Azure/azure-quickstart-templates.git
 
-    - name: Run ARM-TTK
+    - name: Run ARM-TTK for azure-quickstart-templates/101-storage-account-create/
       uses: ./
       with: 
         args: azure-quickstart-templates/101-storage-account-create/
-
-
-
