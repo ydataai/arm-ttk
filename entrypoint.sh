@@ -11,18 +11,18 @@ set -e
 _args="-TemplatePath $1"
 
 if [$2]
-    then
-        $_args = "$_args -Test $2"
+then
+    $_args="$_args -Test $2"
 fi
 
 if [$3]
+then
+    $_args="$_args -Test $3"
+elif
+    if [$4]
     then
-        $_args = "$_args -Test $3"
-    elif
-        if [$4]
-        then
-            $_args = "$_args -Skip $4"
-        fi
+        $_args="$_args -Skip $4"
+    fi
 fi
 
 sh arm-ttk/Test-AzTemplate.sh $_args
