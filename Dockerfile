@@ -1,6 +1,6 @@
-#FROM alpine:3.9
-
 # Install PowerShell Core from scratch https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7
+
+#FROM alpine:3.9
 
 # RUN apk add --no-cache \
 #         ca-certificates \
@@ -24,7 +24,7 @@
 # && chmod +x /opt/microsoft/powershell/7/pwsh \
 # && ln -s /opt/microsoft/powershell/7/pwsh /usr/bin/pwsh
 
-# PowerShell core
+# PowerShell Core
 # https://hub.docker.com/_/microsoft-powershell
 FROM mcr.microsoft.com/powershell:lts-alpine-3.10
 
