@@ -3,16 +3,16 @@
 # Ensure the workflow fails on error
 set -e
 
-#_template_path=$1
-#_template_file=$2
-#_test=$3
-#_skip=$4
+# -TemplatePath => $1
+# -File => $2
+# -Test => $3
+# -Skip => $4
 
 _args="-TemplatePath $1"
 
 if [ $2 ]
 then
-    $_args="$_args -Test $2"
+    $_args="$_args -File $2"
 fi
 
 if [ $3 ]
