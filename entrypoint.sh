@@ -4,4 +4,4 @@
 set -e
 
 cd /github/workspace
-sh /download/arm-ttk/Test-AzTemplate.sh $1
+sh arm-ttk/Test-AzTemplate.sh 

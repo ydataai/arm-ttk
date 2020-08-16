@@ -22,7 +22,8 @@
 # && chmod +x /opt/microsoft/powershell/7/pwsh \
 # && ln -s /opt/microsoft/powershell/7/pwsh /usr/bin/pwsh
 
-#powershell core
+# PowerShell core
+# https://hub.docker.com/_/microsoft-powershell
 FROM mcr.microsoft.com/powershell:lts-alpine-3.10
 
 # Install Git
