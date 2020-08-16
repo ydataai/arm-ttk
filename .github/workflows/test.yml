@@ -13,9 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - run: git clone https://github.com/Azure/azure-quickstart-templates.git
-
-    - name: Run ARM-TTK for azure-quickstart-templates/101-storage-account-create/
+    - name: Run ARM-TTK on 'unit-tests' folder
       uses: ./
       with: 
-        args: azure-quickstart-templates/101-storage-account-create/
+        args: unit-tests
