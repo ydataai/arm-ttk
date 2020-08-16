@@ -12,16 +12,16 @@ _args="-TemplatePath $1"
 
 if [ $2 ]
 then
-    $_args="$_args -File $2"
+    _args="$_args -File $2"
 fi
 
 if [ $3 ]
 then
-    $_args="$_args -Test $3"
+    _args="$_args -Test $3"
 else
     if [ $4 ]
     then
-        $_args="$_args -Skip $4"
+        _args="$_args -Skip $4"
     fi
 fi
 
