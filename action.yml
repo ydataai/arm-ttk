@@ -10,10 +10,10 @@ inputs:
     description: 'Run the test on a specific file on the path defined'
   tests:
     required: false
-    description: 'Test(s) to run'
+    description: 'Test(s) to run, comma separated'
   skip:
     required: false
-    description: 'Test(s) to be excluded'
+    description: 'Test(s) to be excluded, comma separated'
 outputs:
   results:
     description: 'Test Results'

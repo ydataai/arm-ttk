@@ -18,11 +18,11 @@ fi
 if [ "$3" ]
 then
     _args="$_args -Test '$3'"
-else
-    if [ "$4" ]
-    then
-        _args="$_args -Skip '$4'"
-    fi
+fi
+
+if [ "$4" ]
+then
+    _args="$_args -Skip '$4'"
 fi
 
 echo "Running: sh arm-ttk/Test-AzTemplate.sh $_args"
