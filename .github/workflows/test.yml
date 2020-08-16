@@ -30,10 +30,10 @@ jobs:
       uses: ./
       with: 
         path: azure-quickstart-templates/101-storage-account-create/
-        skip: 'Resources Should have Location'
+        skip: Resources Should have Location
     
     - name: Run ARM-TTK with 'tests'
       uses: ./
       with: 
         path: azure-quickstart-templates/101-storage-account-create/
-        tests: 'Resources Should have Location'
+        tests: Resources Should have Location
