@@ -22,7 +22,6 @@ else
     if [ $4 ]
     then
         $_args="$_args -Skip $4"
-    else
     fi
 fi
 
