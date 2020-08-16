@@ -26,4 +26,6 @@ else
 fi
 
 echo "Running: sh arm-ttk/Test-AzTemplate.sh $_args"
-sh arm-ttk/Test-AzTemplate.sh $_args
+results=$(sh arm-ttk/Test-AzTemplate.sh $_args)
+
+echo "::set-output results=$results"

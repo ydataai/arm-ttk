@@ -14,6 +14,9 @@ inputs:
   skip:
     required: false
     description: 'Test(s) to be excluded'
+outputs:
+  results:
+    description: 'Test Results'
 branding:
   icon: 'command'  
   color: 'blue'
