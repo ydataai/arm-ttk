@@ -28,4 +28,6 @@ fi
 echo "Running: sh arm-ttk/Test-AzTemplate.sh $_args"
 results=$(sh arm-ttk/Test-AzTemplate.sh $_args)
 
+echo "Results: $results"
+
 echo "::set-output results=$results"
