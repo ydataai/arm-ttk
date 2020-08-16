@@ -32,3 +32,10 @@ jobs:
         path: azure-quickstart-templates/101-storage-account-create/
         file: azuredeploy.json
         skip: 'Resources Should have Location'
+    
+    - name: Run ARM-TTK with 'file+skip'
+      uses: ./
+      with: 
+        path: azure-quickstart-templates/101-storage-account-create/
+        file: azuredeploy.json
+        tests: all

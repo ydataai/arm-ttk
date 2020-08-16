@@ -24,5 +24,5 @@ else
         _args="$_args -Skip $4"
     fi
 fi
-
+echo "Running: sh arm-ttk/Test-AzTemplate.sh $_args"
 sh arm-ttk/Test-AzTemplate.sh $_args
