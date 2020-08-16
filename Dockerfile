@@ -1,5 +1,7 @@
 #FROM alpine:3.9
 
+# Install PowerShell Core from scratch https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7
+
 # RUN apk add --no-cache \
 #         ca-certificates \
 #         less \
