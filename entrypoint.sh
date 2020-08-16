@@ -2,6 +2,4 @@
 
 # Ensure the workflow fails on error
 set -e
-
-cd /github/workspace
-sh arm-ttk/Test-AzTemplate.sh 
+sh arm-ttk/Test-AzTemplate.sh -TemplatePath $1
