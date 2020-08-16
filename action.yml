@@ -2,8 +2,14 @@
 name: 'ARM-TTK'
 description: 'runs arm-ttk as a part of a workflow'
 inputs:
-  args:
+  folder:
     required: true
+    description: 'arm-ttk args' 
+  file:
+    required: false
+    description: 'arm-ttk args'
+  test:
+    required: false
     description: 'arm-ttk args'
 branding:
   icon: 'command'  
@@ -11,4 +17,7 @@ branding:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-
+  args:
+    - ${{ inputs.folder }}
+    - ${{ inputs.file }}
+    - ${{ inputs.test }}
