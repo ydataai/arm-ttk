@@ -55,6 +55,7 @@ It tests ARM Templates for number of pre-defined scenarios. You can read more be
 
 
 --- Original README.md content from the folked repository ---
+<hr/>
 
 # Azure Resource Manager Template Toolkit (arm-ttk)
 
