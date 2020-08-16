@@ -1,3 +1,5 @@
+![test](https://github.com/venura9/arm-ttk/workflows/test/badge.svg)
+
 # About
 
 This actions enables running arm-ttk as a part of a GitHub Actions workflow. 
