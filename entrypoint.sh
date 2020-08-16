@@ -10,17 +10,16 @@ set -e
 
 _args="-TemplatePath $1"
 
-if [$2]
+if [ $2 ]
 then
     $_args="$_args -Test $2"
-else
 fi
 
-if [$3]
+if [ $3 ]
 then
     $_args="$_args -Test $3"
 else
-    if [$4]
+    if [ $4 ]
     then
         $_args="$_args -Skip $4"
     else
