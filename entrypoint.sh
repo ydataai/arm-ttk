@@ -13,15 +13,17 @@ _args="-TemplatePath $1"
 if [$2]
 then
     $_args="$_args -Test $2"
+else
 fi
 
 if [$3]
 then
     $_args="$_args -Test $3"
-elif
+else
     if [$4]
     then
         $_args="$_args -Skip $4"
+    else
     fi
 fi
 
