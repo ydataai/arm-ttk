@@ -8,7 +8,7 @@ set -e
 #_test=$3
 #_skip=$4
 
-_args = "-TemplatePath $1"
+_args="-TemplatePath $1"
 
 if [$2]
     then
