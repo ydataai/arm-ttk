@@ -12,52 +12,51 @@ It tests ARM Templates for number of pre-defined scenarios. You can read more be
 - [Source](https://aka.ms/arm-ttk)
 
 ## Inputs
-  ### `path`
+  #### `path`
    - **Required** 'Path to run the tests on'  
-  ### `file`
+  #### `file`
    - **Optional** 'Run the test on a specific file on the path defined' 
    - Default `''`
-  ### `tests`
+  #### `tests`
    - **Optional** 'Test(s) to run, comma separated' 
    - Default `''`
-  ### `skip`
+  #### `skip`
    - **Optional** 'Test(s) to be excluded, comma separated' 
    - Default `''`
 
 ## Outputs
-  ### `results`
+  #### `results`
   'Test Results'
 
 ## Example usage
 
 ```yaml
-    - name: Run ARM-TTK with 'path'
-      uses: venura9/arm-ttk@master
-      with: 
-        path: azure-quickstart-templates/101-storage-account-create/
+  - name: Run ARM-TTK with 'path'
+    uses: venura9/arm-ttk@master
+    with: 
+      path: azure-quickstart-templates/101-storage-account-create/
 
-    - name: Results for Run ARM-TTK with 'path'
-      run: echo "Results ${{ steps.path-test.outputs.results }}"
+  - name: Results for Run ARM-TTK with 'path'
+    run: echo "Results ${{ steps.path-test.outputs.results }}"
 
-    - name: Run ARM-TTK with 'file'
-      uses: venura9/arm-ttk@master
-      with: 
-        path: azure-quickstart-templates/101-storage-account-create/
-        file: azuredeploy.json
-    
-    - name: Run ARM-TTK with 'skip'
-      uses: venura9/arm-ttk@master
-      with: 
-        path: azure-quickstart-templates/101-storage-account-create/
-        skip: 'Resources Should have Location'
-    
-    - name: Run ARM-TTK with 'tests'
-      uses: venura9/arm-ttk@master
-      with: 
-        path: azure-quickstart-templates/101-storage-account-create/
-        tests: 'Resources Should have Location'
+  - name: Run ARM-TTK with 'file'
+    uses: venura9/arm-ttk@master
+    with: 
+      path: azure-quickstart-templates/101-storage-account-create/
+      file: azuredeploy.json
+
+  - name: Run ARM-TTK with 'skip'
+    uses: venura9/arm-ttk@master
+    with: 
+      path: azure-quickstart-templates/101-storage-account-create/
+      skip: 'Resources Should have Location'
+
+  - name: Run ARM-TTK with 'tests'
+    uses: venura9/arm-ttk@master
+    with: 
+      path: azure-quickstart-templates/101-storage-account-create/
+      tests: 'Resources Should have Location'
 ```
-
 
 --- Original README.md content from the folked repository ---
 <hr/>
