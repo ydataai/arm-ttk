@@ -16,13 +16,13 @@ It tests ARM Templates for number of pre-defined scenarios. You can read more be
    - **Required** 'Path to run the tests on'  
   ### `file`
    - **Optional** 'Run the test on a specific file on the path defined' 
-   - Default `""`.
+   - Default `''`
   ### `tests`
    - **Optional** 'Test(s) to run, comma separated' 
-   - Default `""`.
+   - Default `''`
   ### `skip`
    - **Optional** 'Test(s) to be excluded, comma separated' 
-   - Default `""`.
+   - Default `''`
 
 ## Outputs
   ### `results`
