@@ -16,7 +16,7 @@ inputs:
     description: 'Test(s) to be excluded, comma separated'
 outputs:
   results:
-    description: 'Test Results'
+    description: 'Test Results as a sting'
 branding:
   icon: 'check-square'  
   color: 'blue'
