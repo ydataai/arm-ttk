@@ -27,11 +27,11 @@
 # https://hub.docker.com/_/microsoft-powershell
 FROM mcr.microsoft.com/powershell:lts-alpine-3.10
 
-# Install Git
-# RUN apk add git
+Install Git
+RUN apk add git
 
-# Clone ARM-TTK Repo
-# RUN git clone https://github.com/venura9/arm-ttk.git download
+Clone ARM-TTK Repo
+RUN git clone https://github.com/venura9/arm-ttk.git arm-ttk
 
 # Copies your code file from your action repository to the filesystem path `/` of the container.
 COPY entrypoint.sh /entrypoint.sh
