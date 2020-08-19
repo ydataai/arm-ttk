@@ -31,31 +31,34 @@ It tests ARM Templates for number of pre-defined scenarios. You can read more be
 ## Example usage
 
 ```yaml
-  - name: Run ARM-TTK with 'path'
-    uses: venura9/arm-ttk@master
-    with: 
-      path: azure-quickstart-templates/101-storage-account-create/
+- name: Run ARM-TTK with 'path'
+  uses: venura9/arm-ttk@master
+  id: path-test
+  with: 
+    path: azure-quickstart-templates/101-storage-account-create/
 
-  - name: Results for Run ARM-TTK with 'path'
-    run: echo "Results ${{ steps.path-test.outputs.results }}"
+- name: Results for Run ARM-TTK with 'path'
+  run: |
+    content=${{ steps.path-test.outputs.results }}
+    echo "Results $content"
 
-  - name: Run ARM-TTK with 'file'
-    uses: venura9/arm-ttk@master
-    with: 
-      path: azure-quickstart-templates/101-storage-account-create/
-      file: azuredeploy.json
+- name: Run ARM-TTK with 'file'
+  uses: venura9/arm-ttk@master
+  with: 
+    path: azure-quickstart-templates/101-storage-account-create/
+    file: azuredeploy.json
 
-  - name: Run ARM-TTK with 'skip'
-    uses: venura9/arm-ttk@master
-    with: 
-      path: azure-quickstart-templates/101-storage-account-create/
-      skip: 'Resources Should have Location'
+- name: Run ARM-TTK with 'skip'
+  uses: venura9/arm-ttk@master
+  with: 
+    path: azure-quickstart-templates/101-storage-account-create/
+    skip: Resources Should have Location
 
-  - name: Run ARM-TTK with 'tests'
-    uses: venura9/arm-ttk@master
-    with: 
-      path: azure-quickstart-templates/101-storage-account-create/
-      tests: 'Resources Should have Location'
+- name: Run ARM-TTK with 'tests'
+  uses: venura9/arm-ttk@master
+  with: 
+    path: azure-quickstart-templates/101-storage-account-create/
+    tests: Resources Should have Location
 ```
 
 --- Original README.md content from the folked repository ---
