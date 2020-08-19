@@ -31,7 +31,7 @@ FROM mcr.microsoft.com/powershell:lts-alpine-3.10
 RUN apk add git
 
 #Clone ARM-TTK Repo
-RUN git clone https://github.com/venura9/arm-ttk.git arm-ttk
+RUN git clone https://github.com/venura9/arm-ttk.git /arm-ttk
 
 # Copies your code file from your action repository to the filesystem path `/` of the container.
 COPY entrypoint.sh /entrypoint.sh
