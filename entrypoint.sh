@@ -26,8 +26,8 @@ then
     _args="$_args -Skip '$4'"
 fi
 
-echo "Running: sh /arm-ttk/Test-AzTemplate.sh $_args"
-results=$(sh /arm-ttk/Test-AzTemplate.sh $_args)
+echo "Running: sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args"
+results=$(sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args)
 
 echo "Results: $results"
 # https://github.com/actions/create-release/issues/25
