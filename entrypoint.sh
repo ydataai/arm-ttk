@@ -28,10 +28,6 @@ fi
 
 echo "Running: sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args"
 
-echo "Results"
+echo "Results:"
 echo ""
 sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args || true
-
-# return with success 
-echo "return success"
-exit 0
