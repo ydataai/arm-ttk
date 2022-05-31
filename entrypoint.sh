@@ -25,6 +25,11 @@ then
     _args="$_args -Skip '$4'"
 fi
 
+# check folders
+ls
+#
+
+
 echo "Running: sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args"
 results=$(sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args)
 
