@@ -35,13 +35,5 @@ echo "Running: sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args"
 
 sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args
 
-results=$(sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args)
-
-echo "Results: $results"
-# https://github.com/actions/create-release/issues/25
-results="${results//'%'/'%25'}"
-results="${results//$'\n'/'%0A'}"
-results="${results//$'\r'/'%0D'}"
-
-#this sets the output
-echo "::set-output name=results::'$results'"
+# return with success 
+exit 0
