@@ -27,6 +27,7 @@ fi
 
 # check folders
 ls
+ls /
 #
 
 
