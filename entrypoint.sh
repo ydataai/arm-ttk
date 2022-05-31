@@ -30,9 +30,8 @@ echo "Running: sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args"
 
 echo "Results"
 echo ""
-results=$(sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args)
-
-echo $results
+sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args
 
 # return with success 
+echo "return success"
 exit 0
