@@ -8,6 +8,8 @@ RUN apk add git
 #Clone ARM-TTK Repo
 RUN git clone https://github.com/Azure/arm-ttk.git /arm-ttk
 
+RUN git --no-pager log --pretty=format:'%h' -n 1
+
 # Copies your code file from your action repository to the filesystem path `/` of the container.
 COPY entrypoint.sh /entrypoint.sh
 

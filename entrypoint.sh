@@ -26,8 +26,8 @@ then
 fi
 
 
-echo "Running: sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args"
+echo "Running: sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args -TestParameter @{NumberOfDays=30}"
 
 echo "Results:"
 echo ""
-sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args || true
+sh /arm-ttk/arm-ttk/Test-AzTemplate.sh $_args -TestParameter @{NumberOfDays=30} || true
